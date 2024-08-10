@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+
+#container{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 21px 5px;
+    /* gap: 10px; */
+    
+}
+.brand-img{
+    height: 80px;
+    /* width: 60px; */
+}
+
+.logo{
+    height: 34px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#header-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #0060AA 0%, #009846 100%);
+    height: 70px;
+    /* width: 1200px; */
+
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: large;
+}
+
+#appoint-btn{
+    background-color: rgba(129, 190, 167, 0.2);
+    width: 255px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    font-size: large;
+
+}
+
+#appoint-btn:hover{
+    background-color:#0060AA;
+}
+
+.slider{
+    margin-top: -10px;
+}
+
+.slide-img{
+    height: 512px;
+    width: 100%;
+}
+
+.Welcome{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+/* .doc-img{
+    width: 50%;
+} */
+
+.doc-img img{
+    width: 800px;
+    height: 600px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.text h1{
+    color: #0060AA;
+    font-size: 36px;
+}
+
+.text h3{
+    font-size: 20px;
+    color: #434242;
+}
+
+.text p{
+    line-height: 2;
+    color: #434242;
+}
+
+.read-btn{
+    border: none;
+    outline: none;
+    background: #0060AA;
+    padding: 10px ;
+    font-size: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 95%;               /* Adjust to take full width of the container */
+    height: 800px;          
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;            /* Prevent the item from shrinking */
+    display: none;             /* Hide items by default */
+    justify-content: center;   /* Center content */
+    align-items: center;       /* Center content vertically */
+    height: 100%;              /* Ensure the item takes the full height */
+}
+
+.carousel-item.active {
+    display: flex;             /* Flexbox layout to center the image within the carousel */
+}
+
+
+/* Image Styling */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will ensure the image covers the entire area without stretching */
+    object-position: center; /* This will center the image within its container */
+    vertical-align: middle;
+}
+
+
+/* Caption Styling */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Indicators */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators .indicator {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #717171;
+}
+
+/* Control buttons */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
